@@ -1,7 +1,14 @@
 // Copyright (c) Microsoft Corporation. All rights reserved.
 // Licensed under the MIT license.
 
+#include <fcntl.h>
+#include <sys/mman.h>
+#include <sys/stat.h>
+#include <unistd.h>
+#include <cassert>
 #include <chrono>
+#include <cstdio>
+#include <cstdlib>
 #include <fstream>
 #include "mkl.h"
 #include "types.h"
@@ -35,22 +42,22 @@ int main(int argc, char** argv) {
   FBLAS_UINT lda_b = (FBLAS_UINT) std::stol(argv[13]);
   FBLAS_UINT lda_c = (FBLAS_UINT) std::stol(argv[14]);
 
-  float* mat_A = (float*) mkl_malloc(m * k * sizeof(float), 4096);
-  float* mat_B = (float*) mkl_malloc(n * k * sizeof(float), 4096);
-  float* mat_C = (float*) mkl_malloc(m * n * sizeof(float), 4096);
+  int A_fd = open(A_name.c_str(), O_RDONLY | O_DIRECT);
+  assert(A_fd != -1);
+  int B_fd = open(B_name.c_str(), O_RDONLY | O_DIRECT);
+  assert(B_fd != -1);
+  int C_fd = open(C_name.c_str(), O_RDWR | O_DIRECT);
+  assert(C_fd != -1);
 
-  LOG_INFO(logger, "Reading matrix A into memory");
-  std::ifstream a_file(A_name, std::ios::binary);
-  a_file.read((char*) mat_A, m * k * sizeof(float));
-  a_file.close();
-  LOG_INFO(logger, "Reading matrix B into memory");
-  std::ifstream b_file(B_name, std::ios::binary);
-  b_file.read((char*) mat_B, k * n * sizeof(float));
-  b_file.close();
-  LOG_INFO(logger, "Reading matrix C into memory");
-  std::ifstream c_file(C_name, std::ios::binary);
-  c_file.read((char*) mat_C, m * n * sizeof(float));
-  c_file.close();
+  float* mat_A = (float*) mmap(nullptr, m * k * sizeof(float), PROT_READ,
+                               MAP_PRIVATE, A_fd, 0);
+  assert(mat_A != (float*) MAP_FAILED);
+  float* mat_B = (float*) mmap(nullptr, k * n * sizeof(float), PROT_READ,
+                               MAP_PRIVATE, B_fd, 0);
+  assert(mat_B != (float*) MAP_FAILED);
+  float* mat_C = (float*) mmap(nullptr, m * n * sizeof(float), PROT_WRITE,
+                               MAP_SHARED, C_fd, 0);
+  assert(mat_C != (float*) MAP_FAILED);
 
   LOG_DEBUG(logger, "dimensions : A = ", m, "x", k, ", B = ", k, "x", n);
   LOG_INFO(logger, "Starting sgemm call");
@@ -69,15 +76,11 @@ int main(int argc, char** argv) {
   duration<double> span = duration_cast<duration<double>>(t2 - t1);
   LOG_INFO(logger, "gemm() took ", span.count());
 
-  LOG_INFO(logger, "Writing C to file");
-  std::ofstream cout_file(C_name, std::ios::binary);
-  cout_file.write((char*) mat_C, m * n * sizeof(float));
-  cout_file.close();
-
-  // free memory
-	mkl_free(mat_A);
-	mkl_free(mat_B);
-	mkl_free(mat_C);
-
+  int ret = munmap(mat_A, m * k * sizeof(float));
+  assert(ret != -1);
+  ret = munmap(mat_B, k * n * sizeof(float));
+  assert(ret != -1);
+  ret = munmap(mat_C, m * n * sizeof(float));
+  assert(ret != -1);
   return 0;
 }

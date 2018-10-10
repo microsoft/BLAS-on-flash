@@ -1,8 +1,8 @@
-#include "mkl.h"
 #include <cassert>
 #include <fstream>
 #include <iostream>
 #include "gen_common.h"
+#include "mkl.h"
 using namespace std;
 
 typedef float FPTYPE;
@@ -24,10 +24,10 @@ int main(int argc, char *argv[]) {
   nnz = nrows * nnz_per_row;
 
   ofstream myfile;
-  string info_name(name + "info");
-  string csr_name(name + "csr");
-  string col_name(name + "col");
-  string off_name(name + "off");
+  string   info_name(name + "info");
+  string   csr_name(name + "csr");
+  string   col_name(name + "col");
+  string   off_name(name + "off");
   myfile.open(info_name);
   myfile << nrows << " " << ncols << " " << sparsity << "\n";
   myfile.close();
@@ -49,8 +49,8 @@ int main(int argc, char *argv[]) {
   check_mmap(csr);
 
   srand(time(0));
-  #pragma omp parallel for schedule(static)
-  for(MKL_INT i = 0; i < nnz; i++) {
+#pragma omp parallel for schedule(static)
+  for (MKL_INT i = 0; i < nnz; i++) {
     csr[i] = (FPTYPE)((i % 9) + 1);
   }
 

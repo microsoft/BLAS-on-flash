@@ -120,6 +120,7 @@ link_libraries(fblas)
 
 # Generate drivers
 add_executable(in_mem_gemm_driver drivers/in_mem_gemm.cpp)
+add_executable(mmap_gemm_driver drivers/mmap_gemm.cpp)
 add_executable(in_mem_kmeans_driver drivers/in_mem_kmeans.cpp)
 add_executable(gemm_driver drivers/gemm.cpp)
 add_executable(kmeans_driver drivers/kmeans.cpp)

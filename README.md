@@ -25,6 +25,8 @@ Currently, only the following routines are supported.
 - `cmake -DCMAKE_BUILD_TYPE=X ..` where `X=Debug` or `X=Release`
 - `make -Bj`
 
+BLAS-on-Flash library design, architecture, and some performance numbers can be found in [this](nsdi2019_paper.pdf) paper.
+
 # Contributing
 This project welcomes contributions and suggestions.  Most contributions require you to agree to a
 Contributor License Agreement (CLA) declaring that you have the right to, and actually do, grant us

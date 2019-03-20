@@ -4,7 +4,7 @@
 #include "flash_blas.h"
 #include "lib_funcs.h"
 #include "scheduler/scheduler.h"
-#include "utils.h"
+#include "bof_utils.h"
 
 using namespace flash;
 

@@ -10,7 +10,7 @@
 #include "flash_blas.h"
 #include "scheduler/scheduler.h"
 #include "tasks/gemm_task.h"
-#include "utils.h"
+#include "bof_utils.h"
 
 using std::vector;
 using std::min;

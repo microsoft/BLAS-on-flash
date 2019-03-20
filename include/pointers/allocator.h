@@ -9,7 +9,7 @@
 #include <string>
 #include "bof_types.h"
 #include "file_handles/flash_file_handle.h"
-#include "logger.h"
+#include "bof_logger.h"
 #include "pointer.h"
 
 namespace flash {

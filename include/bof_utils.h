@@ -5,7 +5,7 @@
 #include <unistd.h>
 #include <cstdlib>
 #include <unordered_set>
-#include "logger.h"
+#include "bof_logger.h"
 #include "tasks/task.h"
 
 // round up X to the nearest multiple of Y

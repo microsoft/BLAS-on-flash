@@ -6,7 +6,7 @@
 #include <thread>
 #include "bof_types.h"
 #include "tasks/task.h"
-#include "utils.h"
+#include "bof_utils.h"
 
 namespace flash {
   class CsrGemvNoTransInMem : public BaseTask {

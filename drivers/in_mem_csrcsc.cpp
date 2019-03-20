@@ -5,7 +5,7 @@
 #include <fstream>
 #include "bof_types.h"
 #include "mkl.h"
-#include "utils.h"
+#include "bof_utils.h"
 
 flash::Logger logger("in_mem_csrcsc");
 

@@ -5,7 +5,7 @@
 #include "flash_blas.h"
 #include "lib_funcs.h"
 #include "timer.h"
-#include "utils.h"
+#include "bof_utils.h"
 
 using namespace flash;
 flash::Logger logger("in_mem");

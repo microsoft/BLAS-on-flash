@@ -11,7 +11,7 @@
 #include "pointers/allocator.h"
 #include "pointers/pointer.h"
 #include "scheduler/scheduler.h"
-#include "utils.h"
+#include "bof_utils.h"
 
 namespace flash {
   extern std::string mnt_dir;

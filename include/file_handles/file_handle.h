@@ -6,7 +6,7 @@
 #include <string>
 
 #include "bof_types.h"
-#include "logger.h"
+#include "bof_logger.h"
 
 namespace flash {
   // FileHandle usage modes

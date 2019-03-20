@@ -14,8 +14,8 @@
 
 #include "bof_types.h"
 #include "file_handles/file_handle.h"
-#include "queue.h"
-#include "utils.h"
+#include "bof_queue.h"
+#include "bof_utils.h"
 
 namespace flash {
   class FlashFileHandle : public BaseFileHandle {

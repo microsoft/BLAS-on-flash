@@ -1,7 +1,7 @@
 // Copyright (c) Microsoft Corporation. All rights reserved.
 // Licensed under the MIT license.
 
-#include "utils.h"
+#include "bof_utils.h"
 
 #include <unistd.h>
 #include <cstdlib>

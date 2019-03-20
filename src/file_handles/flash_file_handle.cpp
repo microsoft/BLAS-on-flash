@@ -16,8 +16,8 @@
 #include <iostream>
 #include <vector>
 #include "bof_types.h"
-#include "queue.h"
-#include "utils.h"
+#include "bof_queue.h"
+#include "bof_utils.h"
 
 // max chunk size to fetch/put from/to disk in one request
 // NOTE : Some devices might have higher throughput with more requests of

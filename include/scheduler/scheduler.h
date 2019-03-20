@@ -9,7 +9,7 @@
 #include <vector>
 #include "../bof_types.h"
 #include "../pointers/pointer.h"
-#include "../queue.h"
+#include "../bof_queue.h"
 #include "../tasks/task.h"
 #include "../vector.h"
 #include "cache.h"

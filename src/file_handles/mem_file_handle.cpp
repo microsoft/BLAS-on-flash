@@ -4,7 +4,7 @@
 #include "file_handles/mem_file_handle.h"
 #include <sys/mman.h>
 #include "bof_types.h"
-#include "utils.h"
+#include "bof_utils.h"
 
 flash::MemFileHandle::MemFileHandle() {
   this->file_ptr = nullptr;

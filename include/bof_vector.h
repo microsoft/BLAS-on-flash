@@ -8,7 +8,7 @@
 #include <mutex>
 #include <thread>
 #include <vector>
-#include "utils.h"
+#include "bof_utils.h"
 
 namespace flash {
   template<typename T>

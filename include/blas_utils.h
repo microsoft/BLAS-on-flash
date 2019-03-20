@@ -4,8 +4,8 @@
 #pragma once
 
 #include <parallel/algorithm>
+#include "bof_types.h"
 #include "tasks/task.h"
-#include "types.h"
 
 namespace flash {
   struct SparseBlock {

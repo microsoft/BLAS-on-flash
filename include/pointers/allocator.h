@@ -7,10 +7,10 @@
 #include <cstdint>
 #include <fstream>
 #include <string>
+#include "bof_types.h"
 #include "file_handles/flash_file_handle.h"
 #include "logger.h"
 #include "pointer.h"
-#include "types.h"
 
 namespace flash {
 

@@ -1,9 +1,9 @@
 // Copyright (c) Microsoft Corporation. All rights reserved.
 // Licensed under the MIT license.
 
+#include "../bof_types.h"
 #include "../pointers/pointer.h"
 #include "../tasks/task.h"
-#include "../types.h"
 #include "../utils.h"
 #include "io_executor.h"
 

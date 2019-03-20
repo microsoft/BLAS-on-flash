@@ -5,9 +5,9 @@
 
 #include <cstdint>
 #include <string>
+#include "bof_types.h"
 #include "file_handles/file_handle.h"
 #include "file_handles/mem_file_handle.h"
-#include "types.h"
 
 namespace flash {
 

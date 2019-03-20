@@ -12,9 +12,9 @@
 #include <string>
 #include <unordered_map>
 
+#include "bof_types.h"
 #include "file_handles/file_handle.h"
 #include "queue.h"
-#include "types.h"
 #include "utils.h"
 
 namespace flash {

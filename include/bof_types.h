@@ -2,6 +2,7 @@
 // Licensed under the MIT license.
 
 #pragma once
+
 #include <cfloat>
 #include <cstdint>
 #include "mkl.h"

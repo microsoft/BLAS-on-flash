@@ -1,10 +1,10 @@
 // Copyright (c) Microsoft Corporation. All rights reserved.
 // Licensed under the MIT license.
 
+#include "bof_types.h"
 #include "flash_blas.h"
 #include "lib_funcs.h"
 #include "timer.h"
-#include "types.h"
 #include "utils.h"
 
 using namespace flash;

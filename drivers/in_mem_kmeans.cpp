@@ -1,8 +1,8 @@
 // Copyright (c) Microsoft Corporation. All rights reserved.
 // Licensed under the MIT license.
 
+#include "bof_types.h"
 #include "flash_blas.h"
-#include "types.h"
 
 #include <algorithm>
 #include <vector>

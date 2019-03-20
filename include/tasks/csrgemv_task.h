@@ -4,8 +4,8 @@
 #pragma once
 #include <cstring>
 #include <thread>
+#include "bof_types.h"
 #include "tasks/task.h"
-#include "types.h"
 #include "utils.h"
 
 namespace flash {

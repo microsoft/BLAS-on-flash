@@ -10,8 +10,8 @@
 #include <cstdio>
 #include <cstdlib>
 #include <fstream>
+#include "bof_types.h"
 #include "mkl.h"
-#include "types.h"
 #include "utils.h"
 
 using namespace std::chrono;

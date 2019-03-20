@@ -11,7 +11,7 @@
 #include <iostream>
 #include <numeric>
 #include <vector>
-#include "types.h"
+#include "bof_types.h"
 
 #define N_TESTS 1000
 

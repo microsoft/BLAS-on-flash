@@ -3,10 +3,10 @@
 
 #pragma once
 #include <functional>
+#include "bof_types.h"
 #include "logger.h"
 #include "pointers/allocator.h"
 #include "pointers/pointer.h"
-#include "types.h"
 
 namespace flash {
 

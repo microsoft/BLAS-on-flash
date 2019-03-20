@@ -6,10 +6,10 @@
 #include <algorithm>
 #include <cassert>
 #include <vector>
+#include "bof_types.h"
 #include "flash_blas.h"
 #include "scheduler/scheduler.h"
 #include "tasks/gemm_task.h"
-#include "types.h"
 #include "utils.h"
 
 using std::vector;

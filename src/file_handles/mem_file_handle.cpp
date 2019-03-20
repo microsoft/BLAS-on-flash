@@ -3,7 +3,7 @@
 
 #include "file_handles/mem_file_handle.h"
 #include <sys/mman.h>
-#include "types.h"
+#include "bof_types.h"
 #include "utils.h"
 
 flash::MemFileHandle::MemFileHandle() {

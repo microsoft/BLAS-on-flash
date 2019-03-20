@@ -15,8 +15,8 @@
 #include <fstream>
 #include <iostream>
 #include <vector>
+#include "bof_types.h"
 #include "queue.h"
-#include "types.h"
 #include "utils.h"
 
 // max chunk size to fetch/put from/to disk in one request

@@ -2,10 +2,10 @@
 // Licensed under the MIT license.
 
 #pragma once
+#include "bof_types.h"
 #include "mkl.h"
 #include "pointers/pointer.h"
 #include "tasks/task.h"
-#include "types.h"
 #include "utils.h"
 
 namespace flash {

@@ -3,8 +3,8 @@
 
 #include <chrono>
 #include <fstream>
+#include "bof_types.h"
 #include "mkl.h"
-#include "types.h"
 #include "utils.h"
 
 using namespace std::chrono;
@@ -75,9 +75,9 @@ int main(int argc, char** argv) {
   cout_file.close();
 
   // free memory
-	mkl_free(mat_A);
-	mkl_free(mat_B);
-	mkl_free(mat_C);
+  mkl_free(mat_A);
+  mkl_free(mat_B);
+  mkl_free(mat_C);
 
   return 0;
 }

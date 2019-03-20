@@ -7,10 +7,10 @@
 #include <cassert>
 #include <vector>
 #include "bof_types.h"
+#include "bof_utils.h"
 #include "flash_blas.h"
 #include "scheduler/scheduler.h"
 #include "tasks/gemm_task.h"
-#include "bof_utils.h"
 
 using std::vector;
 using std::min;

@@ -2,7 +2,7 @@
 // Licensed under the MIT license.
 
 #include <unistd.h>
-#include "blas_bof_utils.h"
+#include "blas_utils.h"
 #include "flash_blas.h"
 #include "tasks/csrgemv_task.h"
 namespace flash {

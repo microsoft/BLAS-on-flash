@@ -2,9 +2,9 @@
 // Licensed under the MIT license.
 
 #include "../bof_types.h"
+#include "../bof_utils.h"
 #include "../pointers/pointer.h"
 #include "../tasks/task.h"
-#include "../bof_utils.h"
 #include "io_executor.h"
 
 namespace flash {

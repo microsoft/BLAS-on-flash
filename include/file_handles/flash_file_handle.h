@@ -12,10 +12,10 @@
 #include <string>
 #include <unordered_map>
 
-#include "bof_types.h"
-#include "file_handles/file_handle.h"
 #include "bof_queue.h"
+#include "bof_types.h"
 #include "bof_utils.h"
+#include "file_handles/file_handle.h"
 
 namespace flash {
   class FlashFileHandle : public BaseFileHandle {

@@ -2,7 +2,7 @@
 // Licensed under the MIT license.
 
 #include "scheduler/cache.h"
-#include "timer.h"
+#include "bof_timer.h"
 
 namespace {
   void print_keys_if_not_empty(

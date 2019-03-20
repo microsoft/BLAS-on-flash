@@ -5,8 +5,8 @@
 #include <cstring>
 #include <thread>
 #include "bof_types.h"
-#include "tasks/task.h"
 #include "bof_utils.h"
+#include "tasks/task.h"
 
 namespace flash {
   class CsrGemvNoTransInMem : public BaseTask {

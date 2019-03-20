@@ -1,10 +1,10 @@
 // Copyright (c) Microsoft Corporation. All rights reserved.
 // Licensed under the MIT license.
 
+#include "bof_utils.h"
 #include "flash_blas.h"
 #include "lib_funcs.h"
 #include "scheduler/scheduler.h"
-#include "bof_utils.h"
 
 using namespace flash;
 

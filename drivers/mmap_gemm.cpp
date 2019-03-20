@@ -11,8 +11,8 @@
 #include <cstdlib>
 #include <fstream>
 #include "bof_types.h"
-#include "mkl.h"
 #include "bof_utils.h"
+#include "mkl.h"
 
 using namespace std::chrono;
 

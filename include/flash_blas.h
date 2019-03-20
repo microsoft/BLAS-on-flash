@@ -3,8 +3,8 @@
 
 #pragma once
 #include <functional>
-#include "bof_types.h"
 #include "bof_logger.h"
+#include "bof_types.h"
 #include "pointers/allocator.h"
 #include "pointers/pointer.h"
 

@@ -7,11 +7,11 @@
 #include <sys/types.h>
 #include <unistd.h>
 #include <future>
+#include "bof_utils.h"
 #include "file_handles/flash_file_handle.h"
 #include "pointers/allocator.h"
 #include "pointers/pointer.h"
 #include "scheduler/scheduler.h"
-#include "bof_utils.h"
 
 namespace flash {
   extern std::string mnt_dir;

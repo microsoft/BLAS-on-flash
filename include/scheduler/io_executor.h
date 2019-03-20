@@ -7,9 +7,9 @@
 #include <functional>
 #include <thread>
 #include <vector>
+#include "../bof_queue.h"
 #include "../file_handles/file_handle.h"
 #include "../pointers/pointer.h"
-#include "../bof_queue.h"
 
 namespace flash {
   // Wrapper struct for all work to be done by an IO thread

@@ -7,11 +7,11 @@
 #include <unordered_map>
 #include <unordered_set>
 #include <vector>
-#include "../bof_types.h"
-#include "../pointers/pointer.h"
 #include "../bof_queue.h"
+#include "../bof_types.h"
+#include "../bof_vector.h"
+#include "../pointers/pointer.h"
 #include "../tasks/task.h"
-#include "../vector.h"
 #include "cache.h"
 #include "io_executor.h"
 #include "prioritizer.h"

@@ -7,9 +7,9 @@
 #include <cstdint>
 #include <fstream>
 #include <string>
+#include "bof_logger.h"
 #include "bof_types.h"
 #include "file_handles/flash_file_handle.h"
-#include "bof_logger.h"
 #include "pointer.h"
 
 namespace flash {

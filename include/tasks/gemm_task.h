@@ -3,10 +3,10 @@
 
 #pragma once
 #include "bof_types.h"
+#include "bof_utils.h"
 #include "mkl.h"
 #include "pointers/pointer.h"
 #include "tasks/task.h"
-#include "bof_utils.h"
 
 namespace flash {
   // C = alpha*A*B + beta*C

@@ -3,9 +3,9 @@
 
 #include <cassert>
 #include <chrono>
+#include "bof_utils.h"
 #include "flash_blas.h"
 #include "lib_funcs.h"
-#include "bof_utils.h"
 
 using namespace std::chrono;
 

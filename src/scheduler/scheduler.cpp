@@ -3,7 +3,7 @@
 
 #include "scheduler/scheduler.h"
 #include <cassert>
-#include "timer.h"
+#include "bof_timer.h"
 
 namespace flash {
   Scheduler::Scheduler(FBLAS_UINT n_io_threads, FBLAS_UINT n_compute_thr,

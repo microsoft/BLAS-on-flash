@@ -3,8 +3,8 @@
 
 #include "scheduler/io_executor.h"
 #include <malloc.h>
+#include "bof_timer.h"
 #include "file_handles/flash_file_handle.h"
-#include "timer.h"
 
 namespace {
   bool strip_overlap(FBLAS_UINT start1, FBLAS_UINT end1, FBLAS_UINT start2,

@@ -1,3 +1,5 @@
+This project is archived. Please reach to authors by email for questions.
+
 # BLAS-on-Flash Project Files
 BLAS-on-Flash implements a small subset of BLAS routines (BLAS-2/3) that work with matrices/vectors stored on flash storage.
 In addition to BLAS routines, BlasonFlash also provides other routines like kmeans, sort, map, reduce for large-scale processing on disk-resident data.
